@@ -1,0 +1,30 @@
+type HttpHeader = record { value : text; name : text };
+type HttpResponse = record {
+  status : nat;
+  body : vec nat8;
+  headers : vec HttpHeader;
+};
+type HttpTransformArgs = record { context : vec nat8; response : HttpResponse };
+type ManualReply = record {
+  result : bool;
+  errorMessage : opt text;
+  message : opt text;
+};
+type TestatorDetails = record {
+  sex : text;
+  birthDate : text;
+  birthLocationCode : text;
+  firstNames : vec text;
+  lastName : text;
+};
+service : () -> {
+  canisterBalance128 : () -> (nat) query;
+  check_api : (text) -> (text);
+  check_testator_details_with_id : (principal, text, TestatorDetails) -> (
+      ManualReply,
+    );
+  get_matchid_url : () -> (text) query;
+  get_will_canister_id : () -> (text) query;
+  isTestatorDied : (principal) -> (bool) query;
+  testator_details_transform : (HttpTransformArgs) -> (HttpResponse) query;
+}

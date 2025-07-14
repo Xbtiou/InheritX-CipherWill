@@ -1,0 +1,13 @@
+node_modules
+
+.azle
+.dfx
+
+declarations
+
+.bitcoin
+bitcoin.tar.gz
+bitcoin-23.0-x86_64-linux-gnu.tar.gz
+
+response.txt
+http_responses
