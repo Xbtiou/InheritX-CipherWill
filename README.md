@@ -19,9 +19,7 @@ Currently,  (CipherWill) supports the following assets:
 ## Important Information
 
   * **Eligibility:** This application is exclusively available to users with an **INSEE number** or residents of **France**.
-  * **Codebase Split:**  is divided into two repositories:
-      * This repository contains the **backend canister code**.
-      * For the frontend interface, please visit the [-UI repository](https://github.com/Xbtiou/-CipherWill/tree/main/%20(CipherWill)-%20Frontend).
+  * **Codebase Split:**  is divided into two repositories.
 
 -----
 
