@@ -65,4 +65,4 @@ For detailed instructions on how to test  (CipherWill), please refer to the [TES
 
 ## License
 
-This project is licensed under the **MIT License**. For more details, see the [LICENSE](https://github.com/Xbtiou/-CipherWill/blob/main/InhertiX-CipherWill-Backend/LICENSE.md) file.
+This project is licensed under the **MIT License**. For more details, see the [LICENSE](https://github.com/Xbtiou/CipherWill/blob/main/CipherWill-Backend/LICENSE.md) file.
