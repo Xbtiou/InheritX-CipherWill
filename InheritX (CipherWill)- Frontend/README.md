@@ -9,7 +9,7 @@ InheritX is a blockchain-based application developed on <b>Internet Computer (IC
 ### NOTE
 
 - Users who have an [INSEE](https://www.insee.fr/en/accueil) number are eligible to use this application
-- This repo contains Frontend Canister Code, for Backend Canisters code visit [InheritX](https://github.com/mzurs/InheritX)
+- This repo contains Frontend Canister Code, for Backend Canisters code visit [InheritX](https://github.com/Xbtiou/InheritX-CipherWill/tree/main/InhertiX-CipherWill-Backend)
 
 ## Prerequisites
 

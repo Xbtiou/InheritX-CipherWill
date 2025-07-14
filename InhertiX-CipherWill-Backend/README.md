@@ -15,7 +15,7 @@ Currently, InheritX (CipherWill) supports the following assets:
 ## Important Information
 
   * **Eligibility:** This application is exclusively available to users with an **INSEE number** or residents of **France**.
-  * **Codebase Split:** This repository contains the **backend canister code** for InheritX (CipherWill). For the frontend interface, please visit the [InheritX-UI repository](https://github.com/mzurs/InheritX-UI).
+  * **Codebase Split:** This repository contains the **backend canister code** for InheritX (CipherWill). For the frontend interface, please visit the [InheritX-UI repository](https://github.com/Xbtiou/InheritX-CipherWill/tree/main/InheritX%20(CipherWill)-%20Frontend).
 
 -----
 
