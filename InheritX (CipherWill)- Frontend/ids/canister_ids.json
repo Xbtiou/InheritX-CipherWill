@@ -1,0 +1,20 @@
+{
+  "icrc": {
+    "ic": "awuug-kaaaa-aaaam-abt5a-cai"
+  },
+  "providers": {
+    "ic": "a7x72-4iaaa-aaaam-abt4q-cai"
+  },
+  "will": {
+    "ic": "arvss-hyaaa-aaaam-abt5q-cai"
+  },
+  "bitcoin_canister": {
+    "ic": "xtlu4-6qaaa-aaaam-abx5q-cai"
+  },
+  "icp_ledger": {
+    "ic": "ryjl3-tyaaa-aaaaa-aaaba-cai"
+  },
+  "ckbtc_ledger": {
+    "ic": "mxzaz-hqaaa-aaaar-qaada-cai"
+  }
+}

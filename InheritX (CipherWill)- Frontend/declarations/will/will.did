@@ -1,0 +1,188 @@
+type AddUserDetails = variant { userExists : bool; success : bool };
+type BTCClaimWill = variant {
+  isClaimed : bool;
+  claimError : text;
+  tokenTickerNotSupported : bool;
+  btcClaimResult : _InlineBTCClaimWillBtcClaimResult;
+};
+type BTCCreateWill = variant {
+  identifierUsed : bool;
+  tokenTickerNotSupported : text;
+  success : bool;
+  userNotExists : bool;
+};
+type BTCCreateWillArgs = record {
+  heirs : principal;
+  willName : text;
+  willDescription : text;
+  tokenTicker : text;
+  amountInSats : nat;
+  identifier : nat32;
+};
+type BTCDeleteWill = variant {
+  isClaimed : bool;
+  retainError : text;
+  tokenTickerNotSupported : bool;
+  btcRetainResult : _InlineBTCDeleteWillBtcRetainResult;
+};
+type CreateWillArgs = variant {
+  btc : BTCCreateWillArgs;
+  icrc : ICRCCreateWillArgs;
+};
+type GetHeirWills = variant { wills : vec Will; noWillsExists : bool };
+type GetTestatorWills = variant {
+  userNotExists : bool;
+  wills : vec Will;
+  noWillsExists : bool;
+};
+type GetUserDetails = variant {
+  userDetails : UserDetails;
+  userNotExists : bool;
+};
+type ICRCClaimWill = variant {
+  ckbtcClaimResult : _InlineICRCClaimWillCkbtcClaimResult;
+  isClaimed : bool;
+  claimError : text;
+  tokenTickerNotSupported : bool;
+  icpClaimResult : _InlineICRCClaimWillIcpClaimResult;
+};
+type ICRCCreateWillArgs = record {
+  heirs : principal;
+  willName : text;
+  willDescription : text;
+  tokenTicker : text;
+  identifier : nat32;
+  amount : nat;
+};
+type ICRCDeleteWill = variant {
+  isClaimed : bool;
+  icpRetainResult : _InlineICRCDeleteWillIcpRetainResult;
+  retainError : text;
+  ckbtcRetainResult : _InlineICRCDeleteWillCkbtcRetainResult;
+  tokenTickerNotSupported : bool;
+};
+type ManualReply = variant {
+  result : bool;
+  errorMessageFromCanisterCall : text;
+  willNotExists : bool;
+};
+type ManualReply_1 = variant {
+  btc : BTCClaimWill;
+  icrc : ICRCClaimWill;
+  claimErrorFromProvider : text;
+  addressNull : bool;
+  claimErrorFromCanisterCall : text;
+  claimError : bool;
+  willNotExists : bool;
+  unAuthorizedClaimer : bool;
+  willTypeNotSupported : bool;
+};
+type ManualReply_2 = variant {
+  btc : BTCCreateWill;
+  icrc : BTCCreateWill;
+  userNotExists : bool;
+  willTypeNotSupported : bool;
+};
+type ManualReply_3 = variant {
+  btc : BTCDeleteWill;
+  identifierUsed : bool;
+  icrc : ICRCDeleteWill;
+  unAuthorizedTestator : bool;
+  addressNull : bool;
+  willNotExists : bool;
+  userNotExists : bool;
+  willTypeNotSupported : bool;
+};
+type ManualReply_4 = variant {
+  result : bool;
+  errorMessageFromCanisterCall : text;
+  testatorDetailsNotFound : text;
+  errorMessageFromProviders : text;
+  willNotExists : bool;
+};
+type UpdateUserDetails = variant { success : bool; userNotExists : bool };
+type UserDetails = record {
+  sex : text;
+  "principal" : principal;
+  birthDate : text;
+  birthLocationCode : text;
+  firstNames : vec text;
+  lastName : text;
+};
+type Will = record {
+  heirs : principal;
+  value : nat;
+  willName : text;
+  timeStamp : nat64;
+  testator : principal;
+  isClaimed : bool;
+  willDescription : text;
+  tokenTicker : text;
+  identifier : nat32;
+};
+type _AzleResult = variant { Ok : Will; Err : text };
+type _InlineBTCClaimWillBtcClaimResult = record {
+  claimBTCMessage : text;
+  claimBTCError : opt text;
+  success : bool;
+};
+type _InlineBTCDeleteWillBtcRetainResult = record {
+  retainBTCError : opt text;
+  retainBTCMessage : text;
+  success : bool;
+};
+type _InlineICRCClaimWillCkbtcClaimResult = record {
+  success : bool;
+  claimCKBTCMessage : text;
+};
+type _InlineICRCClaimWillIcpClaimResult = record {
+  claimICPMessage : text;
+  success : bool;
+};
+type _InlineICRCDeleteWillCkbtcRetainResult = record {
+  retainCKBTCMessage : text;
+  success : bool;
+};
+type _InlineICRCDeleteWillIcpRetainResult = record {
+  success : bool;
+  retainICPMessage : text;
+};
+type userDetailsArgs = record {
+  sex : text;
+  birthDate : text;
+  birthLocationCode : text;
+  firstNames : vec text;
+  lastName : text;
+};
+service : () -> {
+  add_identifier_to_mapping : (principal, principal, nat32) -> ();
+  add_user_details : (userDetailsArgs) -> (AddUserDetails);
+  canisterBalance : () -> (nat64) query;
+  check_death_by_identifier : (nat32) -> (ManualReply);
+  claim_will : (nat32, text, opt text) -> (ManualReply_1);
+  create_will : (CreateWillArgs, text) -> (ManualReply_2);
+  delete_will : (nat32, text, opt text) -> (ManualReply_3);
+  get_all_identifiers : () -> (vec record { nat32; principal }) query;
+  get_all_wills : () -> (vec record { nat32; Will }) query;
+  get_all_willsT : () -> (vec record { principal; vec float64 }) query;
+  get_bitcoin_canister_id : () -> (text) query;
+  get_heirs_wills_by_princicpal : (principal) -> (opt vec nat32) query;
+  get_icrc_canister_id : () -> (text) query;
+  get_providers_canister_id : () -> (text) query;
+  get_testator_wills_by_princicpal : (principal) -> (opt vec nat32) query;
+  get_user_by_princicpal : (principal) -> (text) query;
+  get_user_details : () -> (GetUserDetails) query;
+  get_will : (nat32) -> (_AzleResult) query;
+  get_will_canister_id : () -> (principal) query;
+  get_willsC : () -> (vec float64) query;
+  get_willsT : () -> (vec float64) query;
+  get_wills_for_heir : () -> (GetHeirWills) query;
+  get_wills_for_testator : () -> (GetTestatorWills) query;
+  is_user_principal_found : () -> (bool) query;
+  is_will_exists_heirs : () -> (bool) query;
+  is_will_exists_testator : () -> (bool) query;
+  remove_identifier_from_mapping : (principal, principal, nat32) -> ();
+  report_death_by_base64Id : (nat32, text) -> (ManualReply_4);
+  request_random_will_identifier : () -> (nat32);
+  update_user_details : (userDetailsArgs) -> (UpdateUserDetails);
+}

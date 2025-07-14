@@ -1,0 +1,19 @@
+{
+  "canisters": {
+    "inheritX": {
+      "frontend": {
+        "entrypoint": "out/index.html"
+      },
+      "source": ["out"],
+      "type": "assets"
+    }
+  },
+  "dfx": "0.24.3",
+  "version": 1,
+  "networks": {
+    "local": {
+      "bind": "localhost:8080",
+      "type": "ephemeral"
+    }
+  }
+}
