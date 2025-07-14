@@ -1,14 +1,14 @@
 -----
 
-# InheritX (CipherWill)
+# CipherWill
 
 -----
 
-## Secure Your Digital Legacy with InheritX (CipherWill)
+## Secure Your Digital Legacy with  (CipherWill)
 
-InheritX (also known as CipherWill) is an innovative **blockchain-based application** built on the **Internet Computer (ICP)**. It allows you to create a **digital will** for your crypto assets, ensuring that in the event of your passing, your designated beneficiaries seamlessly and securely receive their inheritance.
+ (also known as CipherWill) is an innovative **blockchain-based application** built on the **Internet Computer (ICP)**. It allows you to create a **digital will** for your crypto assets, ensuring that in the event of your passing, your designated beneficiaries seamlessly and securely receive their inheritance.
 
-Currently, InheritX (CipherWill) supports the following assets:
+Currently,  (CipherWill) supports the following assets:
 
   * **Bitcoin (BTC)**
   * **ck-Bitcoin (ckBTC)**
@@ -19,9 +19,9 @@ Currently, InheritX (CipherWill) supports the following assets:
 ## Important Information
 
   * **Eligibility:** This application is exclusively available to users with an **INSEE number** or residents of **France**.
-  * **Codebase Split:** InheritX is divided into two repositories:
+  * **Codebase Split:**  is divided into two repositories:
       * This repository contains the **backend canister code**.
-      * For the frontend interface, please visit the [InheritX-UI repository](https://github.com/Xbtiou/InheritX-CipherWill/tree/main/InheritX%20(CipherWill)-%20Frontend).
+      * For the frontend interface, please visit the [-UI repository](https://github.com/Xbtiou/-CipherWill/tree/main/%20(CipherWill)-%20Frontend).
 
 -----
 
@@ -29,14 +29,14 @@ Currently, InheritX (CipherWill) supports the following assets:
 
 ### Prerequisites
 
-Before you can set up and run InheritX (CipherWill) locally, ensure you have the following versions installed:
+Before you can set up and run  (CipherWill) locally, ensure you have the following versions installed:
 
   * `AZLE_VERSION`: `0.17.1`
   * `NodeJS_VERSION`: `18.17.1`
 
 ### Local Setup Instructions
 
-Follow these steps to get InheritX (CipherWill) running on your local machine:
+Follow these steps to get  (CipherWill) running on your local machine:
 
 1.  **Install Dependencies:**
     ```bash
@@ -61,10 +61,10 @@ Follow these steps to get InheritX (CipherWill) running on your local machine:
 
 ## Testing
 
-For detailed instructions on how to test InheritX (CipherWill), please refer to the [TESTING.md](https://github.com/Xbtiou/InheritX-CipherWill/blob/main/InhertiX-CipherWill-Backend/TESTING.md) document.
+For detailed instructions on how to test  (CipherWill), please refer to the [TESTING.md](https://github.com/Xbtiou/-CipherWill/blob/main/InhertiX-CipherWill-Backend/TESTING.md) document.
 
 -----
 
 ## License
 
-This project is licensed under the **MIT License**. For more details, see the [LICENSE](https://github.com/Xbtiou/InheritX-CipherWill/blob/main/InhertiX-CipherWill-Backend/LICENSE.md) file.
+This project is licensed under the **MIT License**. For more details, see the [LICENSE](https://github.com/Xbtiou/-CipherWill/blob/main/InhertiX-CipherWill-Backend/LICENSE.md) file.
