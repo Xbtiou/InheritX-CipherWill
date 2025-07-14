@@ -1,61 +1,67 @@
-# InheritX
+# InheritX (CipherWill)
 
-## Introduction
+## Secure Your Digital Legacy with InheritX (CipherWill)
 
-<!-- Ignore -->
-<i>
-InheritX is a blockchain-based application developed on <b>Internet Computer (ICP) </b> that allows users to create a digital will and bequeath their assets to designated beneficiaries in the event of their death.
-</i>
+InheritX (CipherWill) is an innovative **blockchain-based application** built on the **Internet Computer (ICP)**, designed to empower you to create a **digital will** for your crypto assets. In the unfortunate event of your passing, InheritX (CipherWill) ensures your designated beneficiaries receive their inheritance seamlessly and securely.
 
-#### Assets currently supported by InheritX
+Currently, InheritX (CipherWill) supports the following assets:
 
-- Bitcoin (BTC)
-- ck-Bitcoin (ckBTC)
-- Internet Computer Protocol (ICP)
+  * **Bitcoin (BTC)**
+  * **ck-Bitcoin (ckBTC)**
+  * **Internet Computer Protocol (ICP)**
 
-### NOTE
+-----
 
-- Users who have an [INSEE](https://www.insee.fr/en/accueil) number or living in France are eligible to use this application
-- This repo contains Backend Canisters Code, for Frontend Canister code visit [InheritX-UI](https://github.com/mzurs/InheritX-UI)
+## Important Information
 
-## Prerequisites
+  * **Eligibility:** This application is exclusively available to users with an **INSEE number** or residents of **France**.
+  * **Codebase Split:** This repository contains the **backend canister code** for InheritX (CipherWill). For the frontend interface, please visit the [InheritX-UI repository](https://github.com/mzurs/InheritX-UI).
 
-1. `DFX_VERSION= 0.15.1`
-2. `AZLE_VERSION= 0.17.1`
-3. `NodeJS_VERSION= 18.17.1`
+-----
 
-## Setting Up and Running InheritX Locally
+## Getting Started
 
-- <h3>Follow steps below</h3>
+### Prerequisites
 
-1. Install dependencies
+Before you can set up and run InheritX (CipherWill) locally, ensure you have the following versions installed:
 
-   ```bash
-   yarn install
-   ```
+  * `DFX_VERSION`: `0.15.1`
+  * `AZLE_VERSION`: `0.17.1`
+  * `NodeJS_VERSION`: `18.17.1`
 
-2. Download & Start Bitcoin Node
+### Local Setup Instructions
 
-   ```bash
-   yarn bitcoin_node:download && yarn bitcoin_node:start
-   ```
+Follow these steps to get InheritX (CipherWill) running on your local machine:
 
-3. Start local replica ( in new terminal )
+1.  **Install Dependencies:**
+    ```bash
+    yarn install
+    ```
+2.  **Download and Start Bitcoin Node:**
+    ```bash
+    yarn bitcoin_node:download && yarn bitcoin_node:start
+    ```
+3.  **Start Local Replica:**
+    Open a **new terminal** and run:
+    ```bash
+    yarn dfx_start
+    ```
+4.  **Deploy Canisters:**
+    Open another **new terminal** and run:
+    ```bash
+    yarn deploy
+    ```
 
-   ```bash
-   yarn dfx_start
-   ```
-
-4. Deploy Canisters ( in new terminal )
-
-   ```bash
-   yarn deploy
-   ```
+-----
 
 ## Testing
 
-- See the [TESTING](TESTING.md) document
+For detailed instructions on how to test InheritX (CipherWill), please refer to the [TESTING.md](TESTING.md) document.
+
+-----
 
 ## License
 
-This project is licensed under the MIT license, see [LICENSE](<[LICENSE](https://github.com/mzurs/InheritX/blob/main/LICENSE)>) for details.
+This project is licensed under the **MIT License**. For more details, see the [LICENSE](https://github.com/mzurs/InheritX/blob/main/LICENSE) file.
+
+-----
