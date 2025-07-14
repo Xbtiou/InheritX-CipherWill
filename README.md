@@ -21,7 +21,7 @@ Currently, InheritX (CipherWill) supports the following assets:
   * **Eligibility:** This application is exclusively available to users with an **INSEE number** or residents of **France**.
   * **Codebase Split:** InheritX is divided into two repositories:
       * This repository contains the **backend canister code**.
-      * For the frontend interface, please visit the [InheritX-UI repository](https://github.com/mzurs/InheritX-UI).
+      * For the frontend interface, please visit the [InheritX-UI repository](https://github.com/Xbtiou/InheritX-CipherWill/tree/main/InheritX%20(CipherWill)-%20Frontend).
 
 -----
 
@@ -61,10 +61,10 @@ Follow these steps to get InheritX (CipherWill) running on your local machine:
 
 ## Testing
 
-For detailed instructions on how to test InheritX (CipherWill), please refer to the [TESTING.md](TESTING.md) document.
+For detailed instructions on how to test InheritX (CipherWill), please refer to the [TESTING.md](https://github.com/Xbtiou/InheritX-CipherWill/blob/main/InhertiX-CipherWill-Backend/TESTING.md) document.
 
 -----
 
 ## License
 
-This project is licensed under the **MIT License**. For more details, see the [LICENSE](https://github.com/mzurs/InheritX/blob/main/LICENSE) file.
+This project is licensed under the **MIT License**. For more details, see the [LICENSE](https://github.com/Xbtiou/InheritX-CipherWill/blob/main/InhertiX-CipherWill-Backend/LICENSE.md) file.
