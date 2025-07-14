@@ -1,12 +1,12 @@
 -----
 
-# CipherWill
+# InheritX - CipherWill
 
 -----
 
 ## Secure Your Digital Legacy with  (CipherWill)
 
- (also known as CipherWill) is an innovative **blockchain-based application** built on the **Internet Computer (ICP)**. It allows you to create a **digital will** for your crypto assets, ensuring that in the event of your passing, your designated beneficiaries seamlessly and securely receive their inheritance.
+(InheritX also known as CipherWill) is an innovative **blockchain-based application** built on the **Internet Computer (ICP)**. It allows you to create a **digital will** for your crypto assets, ensuring that in the event of your passing, your designated beneficiaries seamlessly and securely receive their inheritance.
 
 Currently,  (CipherWill) supports the following assets:
 
