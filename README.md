@@ -45,6 +45,17 @@ Follow these steps to get  (CipherWill) running on your local machine:
 
 For detailed instructions on how to test  (CipherWill), please refer to the [TESTING.md](https://github.com/Xbtiou/-CipherWill/blob/main/InhertiX-CipherWill-Backend/TESTING.md) document.
 
+## Completed Milestones
+- [x] Add Support for HTTPs Outcalls
+- [x] Add CkBTC Integration
+- [x] Support Direct Bitcoin Integration
+
+## Next Milestones
+- [ ] Add Support for $ckETH, $ck-ERC20 ledgers
+- [ ] Add Support for Direct $ETH Integration
+- [ ] Add Support for Multiple Countries
+
+
 -----
 
 ## License
