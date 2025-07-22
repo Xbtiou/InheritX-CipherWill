@@ -36,24 +36,8 @@ Before you can set up and run  (CipherWill) locally, ensure you have the followi
 
 Follow these steps to get  (CipherWill) running on your local machine:
 
-1.  **Install Dependencies:**
-    ```bash
-    yarn install
-    ```
-2.  **Download and Start Bitcoin Node:**
-    ```bash
-    yarn bitcoin_node:download && yarn bitcoin_node:start
-    ```
-3.  **Start Local Replica:**
-    Open a **new terminal** and run:
-    ```bash
-    yarn dfx_start
-    ```
-4.  **Deploy Canisters:**
-    Open another **new terminal** and run:
-    ```bash
-    yarn deploy
-    ```
+- For Frontend Setup, follow [README.md](CipherWill-%20Frontend/README.md)
+- For Backend Setup, follow [README.md](CipherWill-Backend/README.md)
 
 -----
 
